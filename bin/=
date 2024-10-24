@@ -1,0 +1,2 @@
+2024-09-29 21:45:11,567 INFO  org.apache.flink.yarn.cli.FlinkYarnSessionCli                [] - Dynamic Property set: execution.checkpointing.interval=5sec
+2024-09-29 21:45:11,567 INFO  org.apache.flink.yarn.cli.FlinkYarnSessionCli                [] - Dynamic Property set: execution.checkpointing.interval=5sec

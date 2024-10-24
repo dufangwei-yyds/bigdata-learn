@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+<name>javax.jdo.option.ConnectionURL</name>
+<value>jdbc:mysql://localhost:3306/hive3?serverTimezone=Asia/Shanghai</value>
+</property>
+<property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.cj.jdbc.Driver</value>
+</property>
+<property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>root</value>
+</property>
+<property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>Dfw920130Q520,</value>
+</property>
+<property>
+    <name>hive.metastore.port</name>
+    <value>9083</value>
+</property>
+<property>
+    <name>hive.querylog.location</name>
+    <value>/Users/bruce/software/hive-3.1.3/hive_repo/querylog</value>
+</property>
+<property>
+    <name>hive.exec.local.scratchdir</name>
+    <value>/Users/bruce/software/hive-3.1.3/hive_repo/scratchdir</value>
+</property>
+<property>
+    <name>hive.downloaded.resources.dir</name>
+    <value>/Users/bruce/software/hive-3.1.3/hive_repo/resources</value>
+</property>
+<property>
+   <name>hive.cli.print.current.db</name>
+   <value>false</value>
+</property>
+<property>
+  <name>hive.cli.print.header</name>
+  <value>false</value>
+</property>
+<property>
+    <name>hive.metastore.uris</name>
+    <value>thrift://localhost:9083</value>
+</property>
+</configuration>

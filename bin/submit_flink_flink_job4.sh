@@ -1,0 +1,1 @@
+flink run -m yarn-cluster -s hdfs://192.168.95.129:8020/flink/sap/savepoint-8ac4ea-616d51670d38/_metadata -c com.bruce.paimon.FlinkSQLWriteToPaimonForBucket_4 -yjm 1024 -ytm 1024 naga-bigdata-1.0-SNAPSHOT.jar
