@@ -3,7 +3,7 @@
 <configuration>
 <property>
 <name>javax.jdo.option.ConnectionURL</name>
-<value>jdbc:mysql://localhost:3306/hive3?serverTimezone=Asia/Shanghai</value>
+<value>jdbc:mysql://xxx:xxx/hive3?serverTimezone=Asia/Shanghai</value>
 </property>
 <property>
     <name>javax.jdo.option.ConnectionDriverName</name>
@@ -15,11 +15,11 @@
 </property>
 <property>
     <name>javax.jdo.option.ConnectionPassword</name>
-    <value>Dfw920130Q520,</value>
+    <value>xxx</value>
 </property>
 <property>
     <name>hive.metastore.port</name>
-    <value>9083</value>
+    <value>xxx</value>
 </property>
 <property>
     <name>hive.querylog.location</name>
@@ -43,6 +43,6 @@
 </property>
 <property>
     <name>hive.metastore.uris</name>
-    <value>thrift://localhost:9083</value>
+    <value>thrift://xxx:xxx</value>
 </property>
 </configuration>
