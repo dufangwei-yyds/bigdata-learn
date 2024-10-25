@@ -1,10 +1,10 @@
-package com.bruce.flinkcdc
+package com.bruce.flinkcdc.flink
 
 import com.ververica.cdc.connectors.mysql.source.MySqlSource
 import com.ververica.cdc.debezium.JsonDebeziumDeserializationSchema
 import org.apache.flink.api.common.RuntimeExecutionMode
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.api.common.eventtime.WatermarkStrategy
+import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 
 import java.util.Properties
 

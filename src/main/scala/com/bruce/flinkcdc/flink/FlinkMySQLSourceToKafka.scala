@@ -1,4 +1,4 @@
-package com.bruce.flinkcdc
+package com.bruce.flinkcdc.flink
 
 import com.ververica.cdc.connectors.mysql.source.MySqlSource
 import com.ververica.cdc.connectors.mysql.table.StartupOptions
@@ -10,8 +10,9 @@ import org.apache.flink.api.scala._
 import org.apache.flink.connector.base.DeliveryGuarantee
 import org.apache.flink.connector.kafka.sink.{KafkaRecordSerializationSchema, KafkaSink}
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import java.util.Properties
 import org.apache.kafka.clients.consumer.ConsumerConfig
+
+import java.util.Properties
 
 /**
  * 使用MySQL CDC实现MySQL数据采集
@@ -19,7 +20,7 @@ import org.apache.kafka.clients.consumer.ConsumerConfig
  * kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic goods_topic
  */
 
-object MySQLCDCToKafkaScala {
+object FlinkMySQLSourceToKafka {
   def main(args: Array[String]): Unit = {
     // 创建 Flink 执行环境
     val env = StreamExecutionEnvironment.getExecutionEnvironment
@@ -66,7 +67,6 @@ object MySQLCDCToKafkaScala {
 
     val properties = new Properties()
     properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaBroker)
-//    properties.setProperty(ProducerConfig.TRANSACTION_TIMEOUT_CONFIG, "90000")  // 设置事务超时时间为 90 秒
 
     // 配置 Kafka Sink
     val kafkaSink = KafkaSink.builder[String]()
